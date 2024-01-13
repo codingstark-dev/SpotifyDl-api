@@ -1,0 +1,7 @@
+
+POST http://127.0.0.1:5000/ 
+Content-Type: multipart/form-data
+
+{
+    "spotify_url": "https://open.spotify.com/track/2Vc6NJ9PW9gD9q343XFRKx?si=9b2b2c7d4a3a4a5d"
+}
