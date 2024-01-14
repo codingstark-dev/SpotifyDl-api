@@ -21,7 +21,7 @@ def home():
 @app.route("/trackDetails", methods=["GET", "POST"])
 def trackDetails():
     url = request.args.get("url")
-    print(url)
+    # print(url)
     track = SpotiFetch.get_spotify_data(SpotiFetch.get_token(), url)
     return jsonify(track)
 

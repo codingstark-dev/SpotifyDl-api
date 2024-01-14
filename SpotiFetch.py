@@ -57,7 +57,7 @@ def get_spotify_data(token, url):
   headers = {"Authorization": f"Bearer {token}"}
   result = get(api_url, headers=headers)
   json_result = json.loads(result.content)
-  print(json_result)
+  # print(json_result)
   return json_result, url_type
 
 def clean_track(track_data):
