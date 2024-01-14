@@ -20,4 +20,4 @@ COPY . .
 EXPOSE 8080
 
 # Set the entrypoint command to run the Flask app
-CMD ["gunicorn", "-c", "gunicorn_config.py", "app:app"]
+CMD ["python", "app.py"]
