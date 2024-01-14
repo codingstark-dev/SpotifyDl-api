@@ -14,7 +14,8 @@ def home():
             return send_file(dfile, as_attachment=True)
     if SpotiFetch.path and os.path.exists(SpotiFetch.path):
         SpotiFetch.delete_folder_contents(SpotiFetch.path)
-    return jsonify({"message": "hii"})
+    return render_template("index.html")
+    # return jsonify({"message": "hii"})
 
 
 @app.route("/trackDetails", methods=["GET", "POST"])
